@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{if ge .FinalValue 80}}
+    <h3>Good</h3>
+{{else if ge .FinalValue 70}}
+    <h3>Nice try!</h3>
+{{else}}
+    <h3>Try Again!</h3>
+{{end}}
+</body>
+</html>

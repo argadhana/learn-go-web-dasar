@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{range $index, $element := .Hobbies}}
+    <h3>{{ $element}}</h3>
+{{else}}
+    <h3>Try Again!</h3>
+{{end}}
+</body>
+</html>
